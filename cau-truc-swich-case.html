@@ -6,6 +6,7 @@
 </head>
 <body>
 <!--Bài 1: Viết lại cấu trúc if sau thành cấu trúc switch-->
+<!--<script>-->
 <!--let browser = prompt("Enter browser name!")-->
 <!--if (browser == 'Edge') {-->
 <!--alert("You've got the Edge!");-->
@@ -14,23 +15,29 @@
 <!--} else {-->
 <!--alert('We hope that this page looks ok!');-->
 <!--}-->
-<!--<script>-->
-<!--  let browser = prompt("nhập tên broser");-->
-<!--  switch (browser) {-->
-<!--    case ("Edge"):-->
-<!--      alert("Bạn đã có Edge");-->
-<!--      break;-->
-<!--    case ("Chorme"):-->
-<!--      case ('Firefox'):-->
-<!--      case ('Safari'):-->
-<!--      case ('Opera'):-->
-<!--          alert('okay chúng tôi cũng hỗ trợ các trình duyệt này');-->
-<!--          break;-->
-<!--      default:-->
-<!--          alert("Chúng tôi hy vọng rằng trang này sẽ ổn!");-->
-<!--  }-->
 <!--</script>-->
+
+<!--chuyển sang swich:-->
+<!--<script>-->
+<!--let browser = prompt("Enter browser name!")-->
+<!--switch (browser) {-->
+<!--case 'Edge':-->
+<!--alert("You've got the Edge!");-->
+<!--break;-->
+<!--case 'Chrome':-->
+<!--case 'Firefox':-->
+<!--case 'Safari':-->
+<!--case 'Opera':-->
+<!--alert('Okay we support these browsers too');-->
+<!--break;-->
+<!--default:-->
+<!--alert('We hope that this page looks ok!');-->
+<!--}-->
+<!--</script>-->
+
+
 <!--Bài 2: Viết lại cấu trúc if sau thành cấu trúc switch-->
+<!--<script>-->
 <!--let a = prompt('a?', '');-->
 
 <!--if (a == 0) {-->
@@ -44,19 +51,54 @@
 <!--if (a == 2 || a == 3) {-->
 <!--alert('2,3');-->
 <!--}-->
-<script>
-    let a = +prompt("a",'');
-    switch (a) {
-        case 0 :
-            alert(0);
-            break;
-        case 1:
-            alert(1);
-            break;
-        case 2:
-        case 3:
-            alert("2,3");
-    }
-</script>
+<!--</script>-->
+<!--Chuyển sang swich:-->
+<!--<script>-->
+<!--let a = +prompt('a?', '');-->
+<!--switch (a) {-->
+<!--case 0:-->
+<!--alert(0);-->
+<!--break;-->
+<!--case 1:-->
+<!--alert(1);-->
+<!--break;-->
+<!--case 2:-->
+<!--case 3:-->
+<!--alert('2,3');-->
+<!--break;-->
+<!--}-->
+<!--</script>-->
+<!--Bài 3: Sử dụng cấu trúc if…else, nhập vào một số, kiểm tra giá trị của số nhập vào-->
+<!--Nếu số đó lớn hơn 0 hiển thị 1-->
+
+<!--Còn lại nếu số đó nhỏ hơn 0 thì hiển thị -1-->
+
+<!--Còn lại hiển thị 0-->
+<!--<script>-->
+<!--let value = prompt('Type a number', 0);-->
+<!--if (value > 0) {-->
+<!--alert(1);-->
+<!--} else if (value < 0) {-->
+<!--alert(-1);-->
+<!--} else {-->
+<!--alert(0);-->
+<!--}-->
+<!--</script>-->
+<!--chuyển sang swich:-->
+<!--<script>-->
+<!--  let value = prompt('Type a number', 0);-->
+<!--  switch ((value >0) ? 1 :(value<0) ? -1 : 0){-->
+<!--      case 1:-->
+<!--          alert(1);-->
+<!--          break;-->
+<!--      case -1:-->
+<!--          alert(-1);-->
+<!--          break;-->
+<!--      case 0 :-->
+<!--          alert(0);-->
+<!--  }-->
+
+<!--</script>-->
+
 </body>
 </html>
